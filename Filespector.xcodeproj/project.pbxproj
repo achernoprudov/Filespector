@@ -12,7 +12,61 @@
 		55B7C96020D60A81009A3264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B7C95E20D60A81009A3264 /* Main.storyboard */; };
 		55B7C96220D60A81009A3264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B7C96120D60A81009A3264 /* Assets.xcassets */; };
 		55B7C96520D60A81009A3264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B7C96320D60A81009A3264 /* LaunchScreen.storyboard */; };
+		55B7C97320D60C2A009A3264 /* InspectFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C97220D60C2A009A3264 /* InspectFileViewController.swift */; };
+		55B7C97620D60C2A009A3264 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B7C97420D60C2A009A3264 /* MainInterface.storyboard */; };
+		55B7C97A20D60C2A009A3264 /* InspectFile.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55B7C97020D60C2A009A3264 /* InspectFile.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55B7C98820D60C90009A3264 /* FileinspectorCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B7C98620D60C90009A3264 /* FileinspectorCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B7C98B20D60C90009A3264 /* FileinspectorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */; };
+		55B7C98C20D60C90009A3264 /* FileinspectorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55B7C99220D60CCD009A3264 /* FileinspectorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */; };
+		55B7C99420D6124B009A3264 /* InspectFileAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99320D6124B009A3264 /* InspectFileAssembler.swift */; };
+		55B7C99620D6125F009A3264 /* InspectFileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99520D6125F009A3264 /* InspectFileViewModel.swift */; };
+		55B7C99A20D61296009A3264 /* InspectFileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99720D6126B009A3264 /* InspectFileInteractor.swift */; };
+		55B7C99E20D6136E009A3264 /* FileAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99D20D6136E009A3264 /* FileAttribute.swift */; };
+		55B7C9A020D613B2009A3264 /* StringFileAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99F20D613B2009A3264 /* StringFileAttribute.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55B7C97820D60C2A009A3264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B7C94F20D60A81009A3264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B7C96F20D60C2A009A3264;
+			remoteInfo = InspectFile;
+		};
+		55B7C98920D60C90009A3264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B7C94F20D60A81009A3264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B7C98320D60C90009A3264;
+			remoteInfo = FileinspectorCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55B7C97E20D60C2A009A3264 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55B7C97A20D60C2A009A3264 /* InspectFile.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B7C99020D60C90009A3264 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55B7C98C20D60C90009A3264 /* FileinspectorCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		55B7C95720D60A81009A3264 /* Filespector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filespector.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +76,38 @@
 		55B7C96120D60A81009A3264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55B7C96420D60A81009A3264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55B7C96620D60A81009A3264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B7C97020D60C2A009A3264 /* InspectFile.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InspectFile.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B7C97220D60C2A009A3264 /* InspectFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectFileViewController.swift; sourceTree = "<group>"; };
+		55B7C97520D60C2A009A3264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		55B7C97720D60C2A009A3264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B7C98420D60C90009A3264 /* FileinspectorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FileinspectorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B7C98620D60C90009A3264 /* FileinspectorCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileinspectorCore.h; sourceTree = "<group>"; };
+		55B7C98720D60C90009A3264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B7C99320D6124B009A3264 /* InspectFileAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectFileAssembler.swift; sourceTree = "<group>"; };
+		55B7C99520D6125F009A3264 /* InspectFileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectFileViewModel.swift; sourceTree = "<group>"; };
+		55B7C99720D6126B009A3264 /* InspectFileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectFileInteractor.swift; sourceTree = "<group>"; };
+		55B7C99D20D6136E009A3264 /* FileAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAttribute.swift; sourceTree = "<group>"; };
+		55B7C99F20D613B2009A3264 /* StringFileAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFileAttribute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		55B7C95420D60A81009A3264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B7C98B20D60C90009A3264 /* FileinspectorCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B7C96D20D60C2A009A3264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B7C99220D60CCD009A3264 /* FileinspectorCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B7C98020D60C90009A3264 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				55B7C95920D60A81009A3264 /* Filespector */,
+				55B7C97120D60C2A009A3264 /* InspectFile */,
+				55B7C98520D60C90009A3264 /* FileinspectorCore */,
 				55B7C95820D60A81009A3264 /* Products */,
+				55B7C99120D60CCD009A3264 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				55B7C95720D60A81009A3264 /* Filespector.app */,
+				55B7C97020D60C2A009A3264 /* InspectFile.appex */,
+				55B7C98420D60C90009A3264 /* FileinspectorCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +151,73 @@
 			path = Filespector;
 			sourceTree = "<group>";
 		};
+		55B7C97120D60C2A009A3264 /* InspectFile */ = {
+			isa = PBXGroup;
+			children = (
+				55B7C99B20D612DF009A3264 /* View */,
+				55B7C97420D60C2A009A3264 /* MainInterface.storyboard */,
+				55B7C97720D60C2A009A3264 /* Info.plist */,
+			);
+			path = InspectFile;
+			sourceTree = "<group>";
+		};
+		55B7C98520D60C90009A3264 /* FileinspectorCore */ = {
+			isa = PBXGroup;
+			children = (
+				55B7C99C20D61350009A3264 /* Model */,
+				55B7C99920D61285009A3264 /* InspectFile */,
+				55B7C98620D60C90009A3264 /* FileinspectorCore.h */,
+				55B7C98720D60C90009A3264 /* Info.plist */,
+			);
+			path = FileinspectorCore;
+			sourceTree = "<group>";
+		};
+		55B7C99120D60CCD009A3264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55B7C99920D61285009A3264 /* InspectFile */ = {
+			isa = PBXGroup;
+			children = (
+				55B7C99720D6126B009A3264 /* InspectFileInteractor.swift */,
+			);
+			path = InspectFile;
+			sourceTree = "<group>";
+		};
+		55B7C99B20D612DF009A3264 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55B7C99520D6125F009A3264 /* InspectFileViewModel.swift */,
+				55B7C99320D6124B009A3264 /* InspectFileAssembler.swift */,
+				55B7C97220D60C2A009A3264 /* InspectFileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55B7C99C20D61350009A3264 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55B7C99D20D6136E009A3264 /* FileAttribute.swift */,
+				55B7C99F20D613B2009A3264 /* StringFileAttribute.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		55B7C98120D60C90009A3264 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B7C98820D60C90009A3264 /* FileinspectorCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		55B7C95620D60A81009A3264 /* Filespector */ = {
@@ -74,15 +227,54 @@
 				55B7C95320D60A81009A3264 /* Sources */,
 				55B7C95420D60A81009A3264 /* Frameworks */,
 				55B7C95520D60A81009A3264 /* Resources */,
+				55B7C97E20D60C2A009A3264 /* Embed App Extensions */,
+				55B7C99020D60C90009A3264 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55B7C97920D60C2A009A3264 /* PBXTargetDependency */,
+				55B7C98A20D60C90009A3264 /* PBXTargetDependency */,
 			);
 			name = Filespector;
 			productName = Filespector;
 			productReference = 55B7C95720D60A81009A3264 /* Filespector.app */;
 			productType = "com.apple.product-type.application";
+		};
+		55B7C96F20D60C2A009A3264 /* InspectFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B7C97D20D60C2A009A3264 /* Build configuration list for PBXNativeTarget "InspectFile" */;
+			buildPhases = (
+				55B7C96C20D60C2A009A3264 /* Sources */,
+				55B7C96D20D60C2A009A3264 /* Frameworks */,
+				55B7C96E20D60C2A009A3264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InspectFile;
+			productName = InspectFile;
+			productReference = 55B7C97020D60C2A009A3264 /* InspectFile.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		55B7C98320D60C90009A3264 /* FileinspectorCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B7C98D20D60C90009A3264 /* Build configuration list for PBXNativeTarget "FileinspectorCore" */;
+			buildPhases = (
+				55B7C97F20D60C90009A3264 /* Sources */,
+				55B7C98020D60C90009A3264 /* Frameworks */,
+				55B7C98120D60C90009A3264 /* Headers */,
+				55B7C98220D60C90009A3264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileinspectorCore;
+			productName = FileinspectorCore;
+			productReference = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +287,14 @@
 				ORGANIZATIONNAME = "Little Stars";
 				TargetAttributes = {
 					55B7C95620D60A81009A3264 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					55B7C96F20D60C2A009A3264 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					55B7C98320D60C90009A3264 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +314,8 @@
 			projectRoot = "";
 			targets = (
 				55B7C95620D60A81009A3264 /* Filespector */,
+				55B7C96F20D60C2A009A3264 /* InspectFile */,
+				55B7C98320D60C90009A3264 /* FileinspectorCore */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +331,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55B7C96E20D60C2A009A3264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B7C97620D60C2A009A3264 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B7C98220D60C90009A3264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +358,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55B7C96C20D60C2A009A3264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B7C99620D6125F009A3264 /* InspectFileViewModel.swift in Sources */,
+				55B7C97320D60C2A009A3264 /* InspectFileViewController.swift in Sources */,
+				55B7C99420D6124B009A3264 /* InspectFileAssembler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55B7C97F20D60C90009A3264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B7C99E20D6136E009A3264 /* FileAttribute.swift in Sources */,
+				55B7C9A020D613B2009A3264 /* StringFileAttribute.swift in Sources */,
+				55B7C99A20D61296009A3264 /* InspectFileInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55B7C97920D60C2A009A3264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B7C96F20D60C2A009A3264 /* InspectFile */;
+			targetProxy = 55B7C97820D60C2A009A3264 /* PBXContainerItemProxy */;
+		};
+		55B7C98A20D60C90009A3264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B7C98320D60C90009A3264 /* FileinspectorCore */;
+			targetProxy = 55B7C98920D60C90009A3264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55B7C95E20D60A81009A3264 /* Main.storyboard */ = {
@@ -158,6 +408,14 @@
 				55B7C96420D60A81009A3264 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		55B7C97420D60C2A009A3264 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55B7C97520D60C2A009A3264 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,6 +531,7 @@
 		55B7C96A20D60A81009A3264 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA742G9DWZ;
@@ -288,6 +547,7 @@
 		55B7C96B20D60A81009A3264 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CA742G9DWZ;
@@ -297,6 +557,84 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55B7C97B20D60C2A009A3264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA742G9DWZ;
+				INFOPLIST_FILE = InspectFile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.littlestars.Filespector.InspectFile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55B7C97C20D60C2A009A3264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA742G9DWZ;
+				INFOPLIST_FILE = InspectFile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.littlestars.Filespector.InspectFile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55B7C98E20D60C90009A3264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CA742G9DWZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FileinspectorCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.littlestars.FileinspectorCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		55B7C98F20D60C90009A3264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CA742G9DWZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FileinspectorCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.littlestars.FileinspectorCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -317,6 +655,24 @@
 			buildConfigurations = (
 				55B7C96A20D60A81009A3264 /* Debug */,
 				55B7C96B20D60A81009A3264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B7C97D20D60C2A009A3264 /* Build configuration list for PBXNativeTarget "InspectFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B7C97B20D60C2A009A3264 /* Debug */,
+				55B7C97C20D60C2A009A3264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B7C98D20D60C90009A3264 /* Build configuration list for PBXNativeTarget "FileinspectorCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B7C98E20D60C90009A3264 /* Debug */,
+				55B7C98F20D60C90009A3264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
