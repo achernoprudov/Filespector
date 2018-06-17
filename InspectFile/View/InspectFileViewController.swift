@@ -8,19 +8,36 @@
 
 import UIKit
 
-class InspectFileViewController: UIViewController {
+class InspectFileViewController: UIViewController, InspectFileView {
+    
+    // MARK: - Insance variable
     
     @IBOutlet weak var tableView: UITableView!
     
+    var viewModel: InspectFileViewModel?
+    
+    // MARK: - Public
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        setupDependencies()
         
-        let assembler = InspectFileAssembler(extensionContext: extensionContext!)
-        
-        
+        viewModel?.start()
+    }
+    
+    func updateData() {
+        tableView.reloadData()
     }
 
     @IBAction func closeController(_ sender: Any) {
         extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+    }
+    
+    // MARK: - Private
+    
+    func setupDependencies() {
+        let assembler = InspectFileAssembler(extensionContext: extensionContext!)
+        viewModel = assembler.buildModel(for: self)
     }
 }

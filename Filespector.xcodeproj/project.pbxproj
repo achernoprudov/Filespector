@@ -23,6 +23,8 @@
 		55B7C99A20D61296009A3264 /* InspectFileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99720D6126B009A3264 /* InspectFileInteractor.swift */; };
 		55B7C99E20D6136E009A3264 /* FileAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99D20D6136E009A3264 /* FileAttribute.swift */; };
 		55B7C9A020D613B2009A3264 /* StringFileAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99F20D613B2009A3264 /* StringFileAttribute.swift */; };
+		55B7C9A520D618D5009A3264 /* InspectFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C9A420D618D5009A3264 /* InspectFileView.swift */; };
+		55B7C9A720D61A20009A3264 /* InspectFileViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C9A620D61A20009A3264 /* InspectFileViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		55B7C99720D6126B009A3264 /* InspectFileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectFileInteractor.swift; sourceTree = "<group>"; };
 		55B7C99D20D6136E009A3264 /* FileAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAttribute.swift; sourceTree = "<group>"; };
 		55B7C99F20D613B2009A3264 /* StringFileAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFileAttribute.swift; sourceTree = "<group>"; };
+		55B7C9A420D618D5009A3264 /* InspectFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectFileView.swift; sourceTree = "<group>"; };
+		55B7C9A620D61A20009A3264 /* InspectFileViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InspectFileViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +201,9 @@
 			children = (
 				55B7C99520D6125F009A3264 /* InspectFileViewModel.swift */,
 				55B7C99320D6124B009A3264 /* InspectFileAssembler.swift */,
+				55B7C9A420D618D5009A3264 /* InspectFileView.swift */,
 				55B7C97220D60C2A009A3264 /* InspectFileViewController.swift */,
+				55B7C9A620D61A20009A3264 /* InspectFileViewController+TableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -369,6 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55B7C99620D6125F009A3264 /* InspectFileViewModel.swift in Sources */,
+				55B7C9A720D61A20009A3264 /* InspectFileViewController+TableView.swift in Sources */,
+				55B7C9A520D618D5009A3264 /* InspectFileView.swift in Sources */,
 				55B7C97320D60C2A009A3264 /* InspectFileViewController.swift in Sources */,
 				55B7C99420D6124B009A3264 /* InspectFileAssembler.swift in Sources */,
 			);

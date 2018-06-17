@@ -11,12 +11,23 @@ import FileinspectorCore
 
 class InspectFileViewModel {
     
+    // MARK: - Insance variables
+    
     var attributes: [FileAttribute] = []
     
     let interactor: InspectFileInteractor
+    let context: NSExtensionContext
     
-    init(interactor: InspectFileInteractor) {
+    weak var view: InspectFileView?
+    
+    // MARK: - Public
+    
+    init(context: NSExtensionContext, interactor: InspectFileInteractor) {
+        self.context = context
         self.interactor = interactor
     }
-
+    
+    func start() {
+        
+    }
 }

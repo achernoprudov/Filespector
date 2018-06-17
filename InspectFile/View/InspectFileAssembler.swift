@@ -13,9 +13,13 @@ struct InspectFileAssembler {
     
     let extensionContext: NSExtensionContext
     
-    func buildModel() -> InspectFileViewModel {
+    func buildModel(for view: InspectFileView) -> InspectFileViewModel {
         let interactor = InspectFileInteractor()
-        InspectFileViewModel(interactor: interactor)
+        let model =  InspectFileViewModel(
+            context: extensionContext,
+            interactor: interactor)
+        model.view = view
+        return model
     }
 
 }
