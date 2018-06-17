@@ -8,7 +8,7 @@
 
 public struct StringFileAttribute: FileAttribute {
     
-    public var type: FileAttributeType = .string
+    public let type: FileAttributeType = .string
     
     public let title: String
     public let value: String

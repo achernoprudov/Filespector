@@ -13,4 +13,9 @@ public struct InspectFileInteractor {
     public init() {
     }
 
+    
+    public func inspect(_ context: NSExtensionContext, completition: ([FileAttribute]) -> Void) {
+        let attribute = StringFileAttribute(title: "foo", value: "bar")
+        completition([attribute])
+    }
 }

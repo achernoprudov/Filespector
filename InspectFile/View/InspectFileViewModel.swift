@@ -7,7 +7,6 @@
 //
 
 import FileinspectorCore
-//import FileinspectorCore
 
 class InspectFileViewModel {
     
@@ -28,6 +27,17 @@ class InspectFileViewModel {
     }
     
     func start() {
-        
+        interactor.inspect(context) { [weak self] attributes in
+            self?.successFetch(attributes)
+        }
+    }
+    
+    // MARK: - Private
+    
+    func successFetch(_ attributes: [FileAttribute]) {
+        DispatchQueue.main.async {
+            self.attributes = attributes
+            self.view?.updateData()
+        }
     }
 }
