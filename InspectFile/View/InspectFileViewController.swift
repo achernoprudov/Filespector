@@ -29,6 +29,12 @@ class InspectFileViewController: UIViewController, InspectFileView {
     func updateData() {
         tableView.reloadData()
     }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 
     @IBAction func closeController(_ sender: Any) {
         extensionContext!.completeRequest(returningItems: [], completionHandler: nil)

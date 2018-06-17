@@ -27,8 +27,11 @@ class InspectFileViewModel {
     }
     
     func start() {
-        interactor.inspect(context) { [weak self] attributes in
-            self?.successFetch(attributes)
+        interactor.inspect(context) { [weak self] result in
+            switch result {
+            case .success(let attributes):  self?.successFetch(attributes)
+            case .error(let error): 	    self?.fail(with: error)
+            }
         }
     }
     
@@ -39,5 +42,10 @@ class InspectFileViewModel {
             self.attributes = attributes
             self.view?.updateData()
         }
+    }
+    
+    func fail(with error: Error) {
+        print(error.localizedDescription)
+        view?.showAlert(title: "Error", message: error.localizedDescription)
     }
 }

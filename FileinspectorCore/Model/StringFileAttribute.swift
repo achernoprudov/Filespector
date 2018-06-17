@@ -12,5 +12,13 @@ public struct StringFileAttribute: FileAttribute {
     
     public let title: String
     public let value: String
-    
 }
+
+public struct AttributedStringFileAttribute: FileAttribute {
+    
+    public let type: FileAttributeType = .attributedString
+    
+    public let title: String
+    public let value: NSAttributedString
+}
+

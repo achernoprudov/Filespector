@@ -27,6 +27,8 @@ extension InspectFileViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // TODO optimize by identifier
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.update(with: attributes[indexPath.row])
         return cell
     }
@@ -35,10 +37,12 @@ extension InspectFileViewController: UITableViewDataSource {
 extension UITableViewCell {
     
     func update(with attribute: FileAttribute) {
+        detailTextLabel?.text = attribute.title
         switch attribute {
         case let stringAttribute as StringFileAttribute:
             textLabel?.text = stringAttribute.value
-            detailTextLabel?.text = stringAttribute.title
+        case let strAttributed as AttributedStringFileAttribute:
+            textLabel?.attributedText = strAttributed.value
         default:
             textLabel?.text = "Cant bind attribute: \(attribute)"
         }

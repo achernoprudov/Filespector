@@ -8,6 +8,7 @@
 
 public enum FileAttributeType {
     case string
+    case attributedString
 }
 
 public protocol FileAttribute {

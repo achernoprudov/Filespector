@@ -9,5 +9,7 @@
 protocol InspectFileView: class {
     
     func updateData()
+    
+    func showAlert(title: String, message: String)
 
 }

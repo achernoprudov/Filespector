@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Inspect File View Controller-->
+        <!--File Inspector-->
         <scene sceneID="ceB-am-kn3">
             <objects>
                 <viewController id="j1y-V4-xli" customClass="InspectFileViewController" customModule="InspectFile" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Xd-am-t49"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ppu-aC-hD3">
+                    <navigationItem key="navigationItem" title="File Inspector" id="ppu-aC-hD3">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="HuD-BJ-xOI">
                             <connections>
                                 <action selector="closeController:" destination="j1y-V4-xli" id="4tY-50-dma"/>
