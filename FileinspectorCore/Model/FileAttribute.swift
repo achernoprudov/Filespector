@@ -6,11 +6,11 @@
 //  Copyright © 2018 Little Stars. All rights reserved.
 //
 
-enum FileAttributeType {
+public enum FileAttributeType {
     case string
 }
 
-protocol FileAttribute {
+public protocol FileAttribute {
     var title: String { get }
     var type: FileAttributeType { get }
 }

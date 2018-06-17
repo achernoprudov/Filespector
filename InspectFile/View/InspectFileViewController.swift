@@ -14,7 +14,9 @@ class InspectFileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        extensionContext.
+        
+        let assembler = InspectFileAssembler(extensionContext: extensionContext!)
+        
         
     }
 

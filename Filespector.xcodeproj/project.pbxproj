@@ -18,7 +18,6 @@
 		55B7C98820D60C90009A3264 /* FileinspectorCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 55B7C98620D60C90009A3264 /* FileinspectorCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55B7C98B20D60C90009A3264 /* FileinspectorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */; };
 		55B7C98C20D60C90009A3264 /* FileinspectorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		55B7C99220D60CCD009A3264 /* FileinspectorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B7C98420D60C90009A3264 /* FileinspectorCore.framework */; };
 		55B7C99420D6124B009A3264 /* InspectFileAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99320D6124B009A3264 /* InspectFileAssembler.swift */; };
 		55B7C99620D6125F009A3264 /* InspectFileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99520D6125F009A3264 /* InspectFileViewModel.swift */; };
 		55B7C99A20D61296009A3264 /* InspectFileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7C99720D6126B009A3264 /* InspectFileInteractor.swift */; };
@@ -35,6 +34,13 @@
 			remoteInfo = InspectFile;
 		};
 		55B7C98920D60C90009A3264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55B7C94F20D60A81009A3264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55B7C98320D60C90009A3264;
+			remoteInfo = FileinspectorCore;
+		};
+		55B7C9A120D615F6009A3264 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55B7C94F20D60A81009A3264 /* Project object */;
 			proxyType = 1;
@@ -103,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B7C99220D60CCD009A3264 /* FileinspectorCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +257,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				55B7C9A220D615F6009A3264 /* PBXTargetDependency */,
 			);
 			name = InspectFile;
 			productName = InspectFile;
@@ -390,6 +396,11 @@
 			isa = PBXTargetDependency;
 			target = 55B7C98320D60C90009A3264 /* FileinspectorCore */;
 			targetProxy = 55B7C98920D60C90009A3264 /* PBXContainerItemProxy */;
+		};
+		55B7C9A220D615F6009A3264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55B7C98320D60C90009A3264 /* FileinspectorCore */;
+			targetProxy = 55B7C9A120D615F6009A3264 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

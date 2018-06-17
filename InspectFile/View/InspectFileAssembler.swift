@@ -6,6 +6,16 @@
 //  Copyright © 2018 Little Stars. All rights reserved.
 //
 
+import Foundation
+import FileinspectorCore
+
 struct InspectFileAssembler {
+    
+    let extensionContext: NSExtensionContext
+    
+    func buildModel() -> InspectFileViewModel {
+        let interactor = InspectFileInteractor()
+        InspectFileViewModel(interactor: interactor)
+    }
 
 }

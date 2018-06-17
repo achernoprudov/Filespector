@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct InspectFileInteractor {
+public struct InspectFileInteractor {
+    
+    public init() {
+    }
 
 }

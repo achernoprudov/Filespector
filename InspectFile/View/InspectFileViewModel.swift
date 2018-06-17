@@ -6,8 +6,17 @@
 //  Copyright © 2018 Little Stars. All rights reserved.
 //
 
-import UIKit
+import FileinspectorCore
+//import FileinspectorCore
 
-class InspectFileViewModel: NSObject {
+class InspectFileViewModel {
+    
+    var attributes: [FileAttribute] = []
+    
+    let interactor: InspectFileInteractor
+    
+    init(interactor: InspectFileInteractor) {
+        self.interactor = interactor
+    }
 
 }

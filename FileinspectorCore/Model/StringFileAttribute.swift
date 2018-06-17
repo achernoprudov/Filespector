@@ -6,11 +6,11 @@
 //  Copyright © 2018 Little Stars. All rights reserved.
 //
 
-struct StringFileAttribute: FileAttribute {
+public struct StringFileAttribute: FileAttribute {
     
-    var type: FileAttributeType = .string
+    public var type: FileAttributeType = .string
     
-    let title: String
-    let value: String
+    public let title: String
+    public let value: String
     
 }
